@@ -3,7 +3,11 @@ body{
     background-color: #FFFFFF;
     color: #666666;
     font-family: "sans-serif",verdana,arial;
-    box-shadow: 0 0 20px grey;
+    border-right: 5px solid #333;
+    -webkit-box-shadow: 5px 0 5px -2px #888;
+/*          box-shadow: 10px 0 5px -2px #888;*/
+/*    box-shadow: 5px 5px 10px black;*/
+/*    box-shadow: 5px black;*/
 }
 h1{
     line-height: 200%;
@@ -61,18 +65,24 @@ nav{
     display: table;
     clear: both;
 }
+.alignment{
+    padding-left: 25px;
+}
 .row{
     background-color: #90C7E3;
+      border-bottom: 5px solid #333;
 }
 
 
 .left {
-  width: 25%;
+  width: 20%;
+    padding-top: 20px;
+    padding-left: 10px;
     text-decoration: none;
 }
 
 .right {
-  width: 75%;
+  width: 80%;
     background-color: white;
 }
 #nav a{
