@@ -1,0 +1,45 @@
+body{
+    
+    background-color: #FFFFFF;
+    color: #666666;
+    font-family: "sans-serif",verdana,arial;
+    box-shadow: 0 0 20px grey;
+}
+h1{
+    line-height: 200%;
+    background: linear-gradient(to right, #002464, #a5c3f7);
+    /*color: #000033;*/
+    color: white;
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;
+    /*background-image: url("gradientblue.jpg");*/
+}
+h2{
+    color: #3399cc;
+    font-family: Georgia,"serif";
+}
+img{
+    width: 100%;
+    height: auto;
+}                                                                     
+nav{
+    padding: 20px 0;
+    display: block;
+    font-weight: bold;
+    background-color: #90C7E3;
+    word-spacing: 5pt;
+}
+#copyright{
+    font-size: .70em;
+    font-style: italic;
+    text-align: center;
+}
+#wrapper{
+    margin: auto;
+    width: 80%;
+}
+#baseline{
+    background-color: #3399cc;
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;
+}
