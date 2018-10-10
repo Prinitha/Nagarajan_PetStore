@@ -68,9 +68,20 @@ nav{
 
 .left {
   width: 25%;
+    text-decoration: none;
 }
 
 .right {
   width: 75%;
     background-color: white;
+}
+#nav a{
+    padding-top: 50px;
+    padding-left: 25px;
+    text-decoration: none;
+    font: bold 20px Georgia, serif;
+    color: #293958;
+    font-style: bold;
+    text-align: center;
+    
 }
