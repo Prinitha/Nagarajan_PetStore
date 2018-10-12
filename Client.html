@@ -1,22 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="CSS/pet.css">
+    <title>ContactUs.html</title>
+    <link rel="stylesheet" href="CSS/pet.css">
+    <style type="text/css">
+  </style>
 </head>
-<body>
-
-<h2>Two Equal Columns</h2>
-
+<body id="wrapper">
+<h1>Pet Store</h1>
 <div class="row">
-  <div class="column left" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column right" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
-  </div>
+    <div class="column left" id="nav">
+                <a href="index.html">Home</a><br>
+                <a href="Aboutus.html">About Us</a><br>
+                <a href="ContactUs.html">Contact Us</a><br>
+                <a href="Client.html">Client</a><br>
+                <a href="Service.html">Service</a><br>
+                <a href="Login.html">Login</a><br>
+    </div>
+    <div class="column right">
+        <div class="banner">
+            <img src="CSS/pet store banner 5 png (1).png">
+        </div>
+            <div class="container">
+                <h2>Client</h2>
+                <p>Required information is marked with an asterisk (*)</p>
+<!--                <div class="form_align">-->
+                <form action="/action_page.php">
+                <ul class = "symbol" id="common">
+                    <div class="col-25">
+                        <li><label for="fname">First Name:</label></li>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                    <div class="col-25">
+                        <li><label for="lname">Last Name:</label></li>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                    <div class="col-25">
+                        <li><label for="email">E-mail:</label></li>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    </div>
+                    <div class="col-25">
+                        <label for="phone">Phone:</label>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+                    </div>
+                    <div class="col-25">
+                        <li><label for="businessname">Business Name:</label></li>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="businessname" name="businessname" placeholder="Your business name..">
+                    </div>
+                </ul>
+                <input type="submit"/>
+                    </form>
+<!--                </div>-->
+            </div>
+        <div id="copyright">
+            <i>Copyright &copy; 2018 Pet Store<br>
+                <a href="mailto:Prinitha@Nagarajan.com">Prinitha@Nagarajan.com</a>
+            </i>
+        </div>
+    </div> 
 </div>
-
 </body>
 </html>

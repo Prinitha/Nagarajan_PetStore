@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>index.html</title>
+    <title>ContactUs.html</title>
     <link rel="stylesheet" href="CSS/pet.css">
+    <style type="text/css">
+  </style>
 </head>
 <body id="wrapper">
 <h1>Pet Store</h1>
 <div class="row">
-    <div class="column left">
-        <nav>
+    <div class="column left" id="nav">
                 <a href="index.html">Home</a><br>
                 <a href="Aboutus.html">About Us</a><br>
-                <a href="">Contact Us</a><br>
-                <a href="">Register</a><br>
-                <a href="">Login</a><br>
-        </nav>
+                <a href="ContactUs.html">Contact Us</a><br>
+                <a href="Client.html">Client</a><br>
+                <a href="Service.html">Service</a><br>
+                <a href="Login.html">Login</a><br>
     </div>
     <div class="column right">
-        <img src="CSS/pet store banner 5 png (1).png">
-        <h2>Contact Us</h2>
-        <p>Required information is marked with an asterisk (*)</p>
-        <form action="/action_page.php">
-            <ul class = "symbol">
-                <li><label for="fname">First Name:</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name.."></li>
-                <li><label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name.."></li>
-                <li><label for="country">E-mail:</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your email.."></li>
-<!--                <select id="country" name="country">-->
-<!--                    <option value="australia">Australia</option>-->
-<!--                    <option value="canada">Canada</option>-->
-<!--                    <option value="usa">USA</option>-->
-<!--                </select><br></li>-->
-                <li><label for="lname">Phone:</label>
-                <input type="text" id="phone" name="lastname" placeholder="Your phone number.."></li>
-                <li><label for="subject">Comments:</label></li>
-                <textarea id="subject" name="subject" placeholder="subject.." style="height:200px"></textarea>
-            </ul>
-<!--            <label for="subject">Subject</label>-->
-<!--            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>-->
-            <input type="submit" value="Submit">
-        </form>
-        <p>Pet Store<br>1999 All Pets Road<br>Round Rock, TX 95555</p>
-        <a href="tel:888-555-5555">888-555-5555</a>
+        <div class="banner">
+            <img src="CSS/pet store banner 7 png.png">
+        </div>
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Required information is marked with an asterisk (*)</p>
+<!--                <div class="form_align">-->
+                <form action="/action_page.php">
+                <ul id = "common" class = "symbol">
+                    <div class="col-25">
+                        <li><label for="fname">First Name:</label></li>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                    <div class="col-25">
+                        <li><label for="lname">Last Name:</label></li>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                    <div class="col-25">
+                        <li><label for="email">E-mail:</label></li>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    </div>
+                    <div class="col-25">
+                        <label for="phone">Phone:</label>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+                    </div>
+                    <div class="col-25">
+                    <li><label for="subject">Comments:</label></li>
+                    </div>
+                    <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="subject.." style="height:50px"></textarea>
+                    </div>
+                </ul>
+                <input type="submit"/>
+                    </form>
+<!--                </div>-->
+            </div>
         <div id="copyright">
             <i>Copyright &copy; 2018 Pet Store<br>
                 <a href="mailto:Prinitha@Nagarajan.com">Prinitha@Nagarajan.com</a>
             </i>
         </div>
-        <hr style="color: '#FF0000';">
     </div> 
 </div>
 </body>

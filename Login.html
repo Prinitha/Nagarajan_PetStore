@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>index.html</title>
+    <title>ContactUs.html</title>
     <link rel="stylesheet" href="CSS/pet.css">
+    <style type="text/css">
+  </style>
 </head>
 <body id="wrapper">
 <h1>Pet Store</h1>
 <div class="row">
-    <div class="column left">
-        <nav>
+    <div class="column left" id="nav">
                 <a href="index.html">Home</a><br>
                 <a href="Aboutus.html">About Us</a><br>
-                <a href="">Contact Us</a><br>
-                <a href="">Register</a><br>
-                <a href="">Login</a><br>
-        </nav>
+                <a href="ContactUs.html">Contact Us</a><br>
+                <a href="Client.html">Client</a><br>
+                <a href="Service.html">Service</a><br>
+                <a href="Login.html">Login</a><br>
     </div>
     <div class="column right">
-        <img src="CSS/pet store banner 5 png (1).png">
-        <h2>Enjoy your Pets in our Island</h2>
-        <p>Pet Store offers a special experience on dealing with your pet's needs on the Island. Relax in serenity with our experts taking care of all your pet's need.</p>
-        <ul>
-            <li> Grooming</li>
-            <li> Vaccines</li>
-            <li> Implants</li>
-            <li> Dental Cleaning</li>
-            <li> Travel Documents</li>
-        </ul>
-        <p>Pet Store<br>1999 All Pets Road<br>Round Rock, TX 95555</p>
-        <a href="tel:888-555-5555">888-555-5555</a>
+        <div class="banner">
+            <img src="CSS/pet store banner 5 png (1).png">
+        </div>
+            <div class="container">
+                <h2>Login</h2>
+                <p>Required information is marked with an asterisk (*)</p>
+<!--                <div class="form_align">-->
+                <form action="/action_page.php">
+                <ul class = "symbol">
+                    <div class="col-25">
+                        <li><label for="email">E-mail:</label></li>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    </div>
+                    <div class="col-25">
+                        <li><label for="password">Password:</label></li>
+                    </div>
+                    <div class="col-75">
+                    <input type="password" id="password" name="password" placeholder="Your password..">
+                    </div>
+                </ul>
+                <input type="submit"/>
+                    </form>
+<!--                </div>-->
+            </div>
         <div id="copyright">
             <i>Copyright &copy; 2018 Pet Store<br>
                 <a href="mailto:Prinitha@Nagarajan.com">Prinitha@Nagarajan.com</a>
             </i>
         </div>
-        <hr style="color: '#FF0000';">
     </div> 
 </div>
 </body>
