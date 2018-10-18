@@ -3,19 +3,21 @@
 <head>
     <title>ContactUs.html</title>
     <link rel="stylesheet" href="CSS/pet.css">
-    <style type="text/css">
-  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="wrapper">
 <h1>Pet Store</h1>
 <div class="row">
-    <div class="column left" id="nav">
+    <div class="column left">
+<!--    <div class="column left" id="nav">-->
+        <nav>
                 <a href="index.html">Home</a><br>
                 <a href="Aboutus.html">About Us</a><br>
                 <a href="ContactUs.html">Contact Us</a><br>
                 <a href="Client.html">Client</a><br>
                 <a href="Service.html">Service</a><br>
                 <a href="Login.html">Login</a><br>
+        </nav>
     </div>
     <div class="column right">
         <div class="banner">
@@ -24,31 +26,35 @@
             <div class="container">
                 <h2>Login</h2>
                 <p>Required information is marked with an asterisk (*)</p>
-<!--                <div class="form_align">-->
                 <form action="/action_page.php">
-                <ul class = "symbol">
-                    <div class="col-25">
-                        <li><label for="email">E-mail:</label></li>
-                    </div>
-                    <div class="col-75">
-                    <input type="text" id="email" name="email" placeholder="Your email..">
-                    </div>
-                    <div class="col-25">
-                        <li><label for="password">Password:</label></li>
-                    </div>
-                    <div class="col-75">
-                    <input type="password" id="password" name="password" placeholder="Your password..">
-                    </div>
-                </ul>
-                <input type="submit"/>
-                    </form>
-<!--                </div>-->
+                    <table>
+                        <ul class = "symbol">
+                            <tr>
+                                <td>
+                                    <label for="email">E-mail:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="email" name="email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="password">Password:</label>
+                                </td>
+                                <td>
+                                    <input type="password" id="password" name="password">
+                                </td>
+                            </tr>
+                        </ul>
+                    </table>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-        <div id="copyright">
+        <footer>
             <i>Copyright &copy; 2018 Pet Store<br>
                 <a href="mailto:Prinitha@Nagarajan.com">Prinitha@Nagarajan.com</a>
             </i>
-        </div>
+        </footer>
     </div> 
 </div>
 </body>

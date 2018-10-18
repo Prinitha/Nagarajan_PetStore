@@ -3,19 +3,21 @@
 <head>
     <title>ContactUs.html</title>
     <link rel="stylesheet" href="CSS/pet.css">
-    <style type="text/css">
-  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="wrapper">
 <h1>Pet Store</h1>
 <div class="row">
-    <div class="column left" id="nav">
+    <div class="column left">
+<!--    <div class="column left" id="nav">-->
+        <nav>
                 <a href="index.html">Home</a><br>
                 <a href="Aboutus.html">About Us</a><br>
                 <a href="ContactUs.html">Contact Us</a><br>
                 <a href="Client.html">Client</a><br>
                 <a href="Service.html">Service</a><br>
                 <a href="Login.html">Login</a><br>
+        </nav>
     </div>
     <div class="column right">
         <div class="banner">
@@ -24,50 +26,60 @@
             <div class="container">
                 <h2>Contact Us</h2>
                 <p>Required information is marked with an asterisk (*)</p>
-<!--                <div class="form_align">-->
                 <form action="/action_page.php">
-                <ul id = "common" class = "symbol">
-                    <div class="col-25">
-                        <li><label for="fname">First Name:</label></li>
-                    </div>
-                    <div class="col-75">
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    </div>
-                    <div class="col-25">
-                        <li><label for="lname">Last Name:</label></li>
-                    </div>
-                    <div class="col-75">
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    </div>
-                    <div class="col-25">
-                        <li><label for="email">E-mail:</label></li>
-                    </div>
-                    <div class="col-75">
-                    <input type="text" id="email" name="email" placeholder="Your email..">
-                    </div>
-                    <div class="col-25">
-                        <label for="phone">Phone:</label>
-                    </div>
-                    <div class="col-75">
-                    <input type="text" id="phone" name="phone" placeholder="Your phone number..">
-                    </div>
-                    <div class="col-25">
-                    <li><label for="subject">Comments:</label></li>
-                    </div>
-                    <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="subject.." style="height:50px"></textarea>
-                    </div>
-                </ul>
-                <input type="submit"/>
-                    </form>
-<!--                </div>-->
+                    <table>
+                        <ul id = "common" class = "symbol">
+                            <tr>
+                                <td>
+                                        <label for="fname" required>First Name:</label>
+                                </td>
+                                <td>
+                                        <input type="text" id="fname" name="firstname">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <label for="lname" required>Last Name:</label>
+                                </td>
+                                <td>
+                                        <input type="text" id="lname" name="lastname" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <label for="email">E-mail:</label>
+                                </td>
+                                <td>
+                                        <input type="text" id="email" name="email" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <label class="required" for="phone">Phone:</label>
+                                </td>
+                                <td>
+                                        <input type="text" id="phone" name="phone">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <label for="subject">Comments:</label>
+                                </td>
+                                <td>
+                                        <textarea id="subject" name="subject" rows="4" cols="20"></textarea>
+                                </td>
+                            </tr>
+                        </ul>
+                    </table>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-        <div id="copyright">
+            <footer>
             <i>Copyright &copy; 2018 Pet Store<br>
                 <a href="mailto:Prinitha@Nagarajan.com">Prinitha@Nagarajan.com</a>
             </i>
-        </div>
-    </div> 
+        </footer>
+        </div> 
 </div>
 </body>
 </html>
